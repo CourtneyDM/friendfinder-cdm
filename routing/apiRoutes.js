@@ -44,8 +44,6 @@ module.exports = function (app) {
         friend.answers = req.body.answers;
         friends.push(friend);
 
-
-
         // Send matched friend as a response to the request
         res.json(friendMatch);
     });
