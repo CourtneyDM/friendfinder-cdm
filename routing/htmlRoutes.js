@@ -1,7 +1,17 @@
-// TODO: Create a GET route that will lead to survey.html
-const express = require("express");
+// Dependencies
 const path = require("path");
 
-const PORT = process.env.PORT || 8080;
+// Import object to store new friends
+let friends = require("../app/data/friends");
 
-// TODO: Create a catch-all route that leads to home.html
+module.exports = function (app) {
+    // Return the home page when requested
+
+    app.get("/survey", (req, res) => {
+        res.sendfile(path.join(__dirname, "../public/survey.html"));
+    });
+
+    app.get("*", (req, res) => {
+        res.sendfile(path.join(__dirname, "../public/home.html"));
+    });
+};
