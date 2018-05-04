@@ -46,7 +46,7 @@ module.exports = function (app) {
 
 
 
-        // TODO: Change this to send the match instead of the newly created friend
+        // Send matched friend as a response to the request
         res.json(friendMatch);
     });
 };
