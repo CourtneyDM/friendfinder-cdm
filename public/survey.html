@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"> 
+
+    <title>Friend Finder :: Survey</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h2>Survey Questions</h2>
+        </header>
+        <hr>
+
+        <form method="post">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="(Required)">
+                </div>
+                <div class="col-xs-6">
+                    <label for="photo">Link to Photo</label>
+                    <input type="text" name="photo" id="photo" class="form-control" placeholder="(Required)">
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <h4>The force is strong with you while coding.</h4>
+                <select name="q1" id="q1" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 2</h3>
+                <h4>You use tabs instead of spaces.</h4>
+                <select name="q2" id="q2" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 3</h3>
+                <h4>You prefer using the GUI versus running commands from the CLI.</h4>
+                <select name="q3" id="q3" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 4</h3>
+                <h4>You commit/push to your Git repo more than you should.</h4>
+                <select name="q4" id="q4" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 5</h3>
+                <h4>The hashtag or '#' is no longer a Twitter topic to you, but rather an id indicator.</h4>
+                <select name="q5" id="q5" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 6</h3>
+                <h4>You have an algorithm that figures out the number of licks to get to the Tootsie Roll Center of a Tootsie Pop.</h4>
+                <select name="q6" id="q6" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 7</h3>
+                <h4>You couldn't explain one difference between Linux and Unix if your life depended on it.</h4>
+                <select name="q7" id="q7" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 8</h3>
+                <h4>Markdown is still a foreign concept to you.</h4>
+                <select name="q8" id="q8" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 9</h3>
+                <h4>You prefer jQuery over Vanilla JavaScript because it's simple.</h4>
+                <select name="q9" id="q9" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 10</h3>
+                <h4>You provide comments in your code to help others understand what is happening.</h4>
+                <select name="q10" id="q10" class="answer">
+                    <option value="" selected>(Choose One)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+            </div>
+            <button id="submit" method="post" class="btn btn-primary btn-block btn-lg" type="submit"><i class="far fa-thumbs-up"></i> Submit Answers</button>
+        </form>
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <span>
+                    <a href="/api/friends">API Friends List</a>
+                </span> |
+                <span>
+                    <a href="https://github.com/CourtneyDM/friendfinder-cdm.git">GitHub Repo</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Code for modal -->
+    <div id="friend-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss=modal>&times;</button>
+                    <h2 class="modal-title">
+                        <strong>Meet Your Match</strong>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="friend-name"></h2>
+                    <img src="#" alt="" id="friend-img">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript functionality for communicating with server -->
+    <script type="text/javascript">
+        $("#submit").on("click", event => {
+            event.preventDefault();
+
+            // Function to validate that all fields were answered and/or completed
+            function validateUserInput() {
+                // Create a flag to capture form input verification
+                let validated = true;
+
+                // Validate text inputs
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        validated = false;
+                    }
+                });
+                // Validate answer selections
+                $(".answer").each(function () {
+                    if ($(this).val() === "") {
+                        validated = false;
+                    }
+                });
+                return validated;
+
+            }
+            
+            // If the form was validated, create an object and set its properties to the form data
+            if (validateUserInput()) {
+                var friend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    answers: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val(),
+                    ]
+                };
+
+                // When the form is submitted, send the friend data to the server
+                $.post("/api/friends", friend).done(data => {
+                    // If the server returns a response, display information in modal
+                    if (data) {
+                        $("#friend-name").text(data.name);
+                        $("#friend-img").attr("src", data.photo);
+                        $("#friend-modal").modal("toggle");
+                    }
+                });
+            }
+            // Alert user that all fields were not answered
+            else {
+                alert("Please complete all fields before submitting.");
+            }
+        });
+    </script>
+</body>
+
+</html>
