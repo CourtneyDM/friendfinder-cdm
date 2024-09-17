@@ -5,13 +5,13 @@ const path = require("path");
 let friends = require("../app/data/friends");
 
 module.exports = function (app) {
-    // Return the home page when requested
+  // Return the home page when requested
 
-    app.get("/survey", (req, res) => {
-        res.sendfile(path.join(__dirname, "../public/survey.html"));
-    });
+  app.get("/survey", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
+  });
 
-    app.get("*", (req, res) => {
-        res.sendfile(path.join(__dirname, "../public/home.html"));
-    });
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
 };
